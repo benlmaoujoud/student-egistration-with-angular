@@ -21,7 +21,9 @@ export class AppComponent {
   danger = ''; 
   notification = ''; 
   explination =''; 
-
+  reloadCurrentPage() {
+    window.location.reload();
+   }
   sendTOMongo(){
     try{
       axios.post('http://localhost:8000/api/student',{
@@ -29,7 +31,7 @@ export class AppComponent {
       'lastName': this.lastName,
       'motherName':this.motherName,
       'fatherName':this.fatherName ,
-      'adress': this.adress,
+      'phone': this.adress,
       'email': this.email
     }).then(function(){})
     this.flag = true;

@@ -6,5 +6,5 @@ class Student(BaseModel):
     lastName:str
     motherName:str
     fatherName:str
-    adress:str
+    phone:str
     email:str

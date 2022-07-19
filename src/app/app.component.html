@@ -58,7 +58,7 @@
 
               <div class="form-outline mb-4">
                 <input [(ngModel)]="adress" type="text" id="form3Example8" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example8">Address</label>
+                <label class="form-label" for="form3Example8">Phone Number</label>
               </div>
 
               <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
@@ -68,11 +68,11 @@
 
               <div class="form-outline mb-4">
                 <input [(ngModel)]="email" type="text" id="form3Example97" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example97">Email ID</label>
+                <label class="form-label" for="form3Example97">Email </label>
               </div>
 
               <div class="d-flex justify-content-end pt-3">
-                <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                <button type="button" class="btn btn-light btn-lg"   (click)="reloadCurrentPage()">Reset all</button>
                 <button (click)="sendTOMongo()" type="button" class="btn btn-warning btn-lg ms-2">Submit form</button>
               </div>
 
